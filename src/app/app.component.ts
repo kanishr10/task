@@ -15,7 +15,7 @@ export class AppComponent implements OnInit{
   editUserId: number | null = null;
 
   constructor(private http: HttpClient,
-    // private fb : FormBuilder
+    private fb : FormBuilder
   ){}
 
   ngOnInit(){
@@ -33,6 +33,7 @@ export class AppComponent implements OnInit{
       name: new FormControl('',[Validators.required,Validators.minLength(3)]),
       email: new FormControl('',[Validators.required,Validators.email]),
       age: new FormControl('',[Validators.required,Validators.min(1)]),
+      details: this.fb.array([]),
     })
   }
 

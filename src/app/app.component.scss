@@ -9,3 +9,23 @@
 form{
     border: none !important;
 }
+
+/* Optional: global styles.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  border-right: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+}
+
+.main-content {
+  overflow-y: auto;
+  width: 100%;
+}
